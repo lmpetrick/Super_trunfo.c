@@ -97,8 +97,8 @@ int main() { // Início do programa Super Trunfo
     printf("\n|Área: %.3fkm²", area);
     printf("\n|PIB: R$%.3f", pib);
     printf("\n|Pontos turísticos: %d  ", pontosturisticos);
-    printf("\n|PIB per Capita: %f", pibpercapita);
-    printf("\n|Densidade Populacional: %f\n", Dpopulacional);
+    printf("\n|PIB per Capita: R$%f", pibpercapita);
+    printf("\n|Densidade Populacional: %fHab/km²\n", Dpopulacional);
     printf("|_______________________|\n\n");
     
     printf("Digite 'OK' para continuar se estiver tudo certo: ");
@@ -147,8 +147,8 @@ int main() { // Início do programa Super Trunfo
     printf("\n|Área: %.3fkm²", area2);
     printf("\n|PIB: R$%.3f", pib2);
     printf("\n|Pontos turísticos: %d  ", pontosturisticos2);
-    printf("\n|PIB per Capita: %f", pibpercapita2);
-    printf("\n|Densidade Populacional: %f\n", Dpopulacional2);
+    printf("\n|PIB per Capita: R$%f", pibpercapita2);
+    printf("\n|Densidade Populacional: %f Hab/km²\n", Dpopulacional2);
     printf("|_______________________|\n\n");
     
     printf("Digite 'OK' para continuar se estiver tudo certo: ");
@@ -168,8 +168,8 @@ int main() { // Início do programa Super Trunfo
     printf("\n|Área: %.3fkm²", area);
     printf("\n|PIB: R$%.3f", pib);
     printf("\n|Pontos turísticos: %d  ", pontosturisticos);
-    printf("\n|PIB per Capita: %f", pibpercapita);
-    printf("\n|Densidade Populacional: %f\n", Dpopulacional);
+    printf("\n|PIB per Capita: R$%f", pibpercapita);
+    printf("\n|Densidade Populacional: %f Hab/km²\n", Dpopulacional);
     printf("|_______________________|\n\n\n");
 
     printf("/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////\n\n");
@@ -183,8 +183,8 @@ int main() { // Início do programa Super Trunfo
     printf("\n|Área: %.3fkm²", area2);
     printf("\n|PIB: R$%.3f", pib2);
     printf("\n|Pontos turísticos: %d  ", pontosturisticos2);
-    printf("\n|PIB per Capita: %f", pibpercapita2);
-    printf("\n|Densidade Populacional: %f\n", Dpopulacional2);
+    printf("\n|PIB per Capita: R$%f", pibpercapita2);
+    printf("\n|Densidade Populacional: %f Hab/km²\n", Dpopulacional2);
     printf("|_______________________|\n\n");
 
     printf("\n\nMuito bem! As cartas foram exibidas com sucesso!\n\n");
