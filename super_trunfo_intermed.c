@@ -24,21 +24,25 @@ int main() { // Início do programa Super Trunfo
 
 ////////////////////////////////////////////////// VARIÁVEIS DAS CARTAS 1 E 2: //////////////////////////////////////////////////
 
-    char   estado[20];        //<---Adicione o nome dos estados.// 
-    char   estado2[20];       ///////////////////////////////////
-    char   cdgdacidade[5];    //<---Adicione o código das cidades com uma letra de 'A' a 'H' seguido de um numero de '1' a '4'.//
-    char   cdgdacidade2[5];   //////////////////////////////////////////////////////////////////////////////////////////////////
-    char   cidade[20];        //<---Adicione o nome das cidades.//
-    char   cidade2[20];       ///////////////////////////////////
-    float  poptotal;          //<---Adicione a população de cada cidade.//
-    float  poptotal2;         ///////////////////////////////////////////
-    float  area;              //<---Adicioce a área em km² de cada cidade.//
-    float  area2;             /////////////////////////////////////////////
-    float  pib;               //<---Adicione o PIB(produto interno bruto) de cada cidade.//
-    float  pib2;              ////////////////////////////////////////////////////////////
-    int    pontosturisticos;  //<---Adicione a quantidade de pontos turísticos de cada cidade.//
-    int    pontosturisticos2; /////////////////////////////////////////////////////////////////
-    
+    char   estado[20];              //<---Adicione o nome dos estados.// 
+    char   estado2[20];             ///////////////////////////////////
+    char   cdgdacidade[5];          //<---Adicione o código das cidades com uma letra de 'A' a 'H' seguido de um numero de '1' a '4'.//
+    char   cdgdacidade2[5];         //////////////////////////////////////////////////////////////////////////////////////////////////
+    char   cidade[20];              //<---Adicione o nome das cidades.//
+    char   cidade2[20];             ///////////////////////////////////
+    float  poptotal;                //<---Adicione a população de cada cidade.//
+    float  poptotal2;               ///////////////////////////////////////////
+    float  area;                    //<---Adicioce a área em km² de cada cidade.//
+    float  area2;                   /////////////////////////////////////////////
+    float  pib;                     //<---Adicione o PIB(produto interno bruto) de cada cidade.//
+    float  pib2;                    ////////////////////////////////////////////////////////////
+    int    pontosturisticos;        //<---Adicione a quantidade de pontos turísticos de cada cidade.//
+    int    pontosturisticos2;       /////////////////////////////////////////////////////////////////
+    float  pibpercapita;             //<---Variável para armazenar o pib per capta de cada cidade.//
+    float  pibpercapita2;            //////////////////////////////////////////////////////////////
+    float  Dpopulacional;           //<--Variável para armazenar a D.Populacional de cada cidade//
+    float  Dpopulacional2;          /////////////////////////////////////////////////////////////
+
     // Variáveis adicionais:
 
     char nome[30];              //<---Variáveis para tornar o programa mais interativo.//
@@ -82,6 +86,8 @@ int main() { // Início do programa Super Trunfo
 
     printf("\n\nÓtimo! agora confirme se os dados estão todos corretos:\n\n\n");
     
+    Dpopulacional = poptotal / area;
+    pibpercapita = pib / poptotal;
     printf(" ________CARTA 1________\n");
     printf("|                       |\n");
     printf("|Estado: %s", estado);
@@ -90,7 +96,9 @@ int main() { // Início do programa Super Trunfo
     printf("\n|População total: %.3f", poptotal);
     printf("\n|Área: %.3fkm²", area);
     printf("\n|PIB: R$%.3f", pib);
-    printf("\n|Pontos turísticos: %d  |\n", pontosturisticos);
+    printf("\n|Pontos turísticos: %d  ", pontosturisticos);
+    printf("\n|PIB per Capita: %f", pibpercapita);
+    printf("\n|Densidade Populacional: %f\n", Dpopulacional);
     printf("|_______________________|\n\n");
     
     printf("Digite 'OK' para continuar se estiver tudo certo: ");
@@ -128,6 +136,8 @@ int main() { // Início do programa Super Trunfo
 
     printf("\n\nÓtimo! agora confirme se os dados estão todos corretos:\n\n\n");
     
+    Dpopulacional2 = poptotal2 / area2;
+    pibpercapita2 = pib2 / poptotal2;
     printf(" ________CARTA 2________\n");
     printf("|                       |\n");
     printf("|Estado: %s", estado2);
@@ -136,7 +146,9 @@ int main() { // Início do programa Super Trunfo
     printf("\n|População total: %.3f", poptotal2);
     printf("\n|Área: %.3fkm²", area2);
     printf("\n|PIB: R$%.3f", pib2);
-    printf("\n|Pontos turísticos: %d  |\n", pontosturisticos2);
+    printf("\n|Pontos turísticos: %d  ", pontosturisticos2);
+    printf("\n|PIB per Capita: %f", pibpercapita2);
+    printf("\n|Densidade Populacional: %f\n", Dpopulacional2);
     printf("|_______________________|\n\n");
     
     printf("Digite 'OK' para continuar se estiver tudo certo: ");
@@ -155,7 +167,9 @@ int main() { // Início do programa Super Trunfo
     printf("\n|População total: %.3f", poptotal);
     printf("\n|Área: %.3fkm²", area);
     printf("\n|PIB: R$%.3f", pib);
-    printf("\n|Pontos turísticos: %d  |\n", pontosturisticos);
+    printf("\n|Pontos turísticos: %d  ", pontosturisticos);
+    printf("\n|PIB per Capita: %f", pibpercapita);
+    printf("\n|Densidade Populacional: %f\n", Dpopulacional);
     printf("|_______________________|\n\n\n");
 
     printf("/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////\n\n");
@@ -168,7 +182,9 @@ int main() { // Início do programa Super Trunfo
     printf("\n|População total: %.3f", poptotal2);
     printf("\n|Área: %.3fkm²", area2);
     printf("\n|PIB: R$%.3f", pib2);
-    printf("\n|Pontos turísticos: %d  |\n", pontosturisticos2);
+    printf("\n|Pontos turísticos: %d  ", pontosturisticos2);
+    printf("\n|PIB per Capita: %f", pibpercapita2);
+    printf("\n|Densidade Populacional: %f\n", Dpopulacional2);
     printf("|_______________________|\n\n");
 
     printf("\n\nMuito bem! As cartas foram exibidas com sucesso!\n\n");
